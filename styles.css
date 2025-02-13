@@ -119,6 +119,36 @@ header {
 .testimonial-buttons button:hover {
     transform: scale(1.2);
 }
+.motivation {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.motivation h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.motivation p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 footer {
