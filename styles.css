@@ -66,13 +66,60 @@ header {
     transform: translateY(-10px);
 }
 
-.testimonial {
-    background: white;
-    padding: 15px;
-    margin: 10px;
-    border-left: 5px solid #ff4b2b;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+.testimonials {
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
 }
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.testimonial-slide {
+    display: none;
+    max-width: 600px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.testimonial-slide.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonial-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.testimonial-buttons button {
+    background: white;
+    border: none;
+    color: #ff4b2b;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-buttons button:hover {
+    transform: scale(1.2);
+}
+
 
 footer {
     background: #222;
